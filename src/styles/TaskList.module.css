@@ -1,0 +1,82 @@
+.tasklist {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgb(0, 0, 0.09);
+  gap: 1rem;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 2rem;
+}
+
+.tasklist input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 6px;
+  transition: border-color 0.2s ease;
+  flex-grow: 1;
+}
+
+.tasklist input:focus {
+  border-color: #2563eb; /* blue on focus */
+}
+
+.tasklist button {
+  background-color: #6510ba;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tasklist button:hover {
+  background-color: #5608a4;
+}
+
+.tasklist li {
+ display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f3f4f6;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 6px;
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.taskItem li:hover {
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+}
+
+
+.taskText {
+  flex: 1;
+  margin: 0 1rem;
+  font-size: 1rem;
+  color: #111827;
+}
+
+.circle,
+.star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  transition: color 0.3s ease;
+}
+
+.circle {
+  margin-right: 0.5rem;
+}
